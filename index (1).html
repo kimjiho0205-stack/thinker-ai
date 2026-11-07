@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THINKER AI</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon">T</div>
+        <div>
+          <h1>THINKER</h1>
+          <p>PERSONAL AI ASSISTANT</p>
+        </div>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        SYSTEM ONLINE
+      </div>
+    </header>
+
+    <main>
+
+      <section class="clock-panel">
+        <p class="section-label">CURRENT TIME</p>
+        <div id="clock">00:00:00</div>
+        <div id="date">날짜를 불러오는 중...</div>
+      </section>
+
+      <section class="core-panel">
+        <div class="orb">
+          <div class="orb-inner">T</div>
+        </div>
+
+        <h2>THINKER CORE</h2>
+        <p id="systemStatus">시스템 대기 중</p>
+      </section>
+
+      <section class="voice-panel">
+        <p class="section-label">VOICE ASSISTANT</p>
+
+        <button id="voiceButton">
+          🎙 음성으로 말하기
+        </button>
+
+        <div id="recognizedText">
+          여기에 인식된 말이 표시됩니다.
+        </div>
+
+        <div id="answerText">
+          THINKER의 답변이 여기에 표시됩니다.
+        </div>
+      </section>
+
+      <section class="info-grid">
+
+        <div class="info-card">
+          <span class="card-icon">◉</span>
+          <h3>VOICE</h3>
+          <p id="voiceStatus">준비 완료</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-icon">◆</span>
+          <h3>CORE</h3>
+          <p>ONLINE</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-icon">⌁</span>
+          <h3>AI CONNECTION</h3>
+          <p>연결 대기 중</p>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      THINKER PROJECT · PERSONAL ASSISTANT
+    </footer>
+
+  </div>
+</body>
+</html>
